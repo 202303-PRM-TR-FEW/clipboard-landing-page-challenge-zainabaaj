@@ -1,87 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./dist/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Clipboard landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
-<body>
 
-  A history of everything you copy
+<body class="font-Bai">
+  <!-- component -->
+  <header>
 
-  Clipboard allows you to track and organize everything you 
-  copy. Instantly access your clipboard on all your devices.
+    <div class=" flex flex-col items-center justify-center w-full bg-cover md:bg-contain  md:bg-no-repeat  "
+      style="  background-image:url('./images/bg-header-desktop.png') ">
+      <div class=" pt-32 md:pt-36 ">
+        <img src="./images/logo.svg" alt="c logo" class=" mb-8 mx-auto">
 
-  Download for iOS
-  Download for Mac
 
-  Keep track of your snippets
+        <div class="text-center ">
+          <h1 class=" text-Nuetural text-5xl font-bold text-center max-w-4xl mx-auto mb-8">A history of everything you
+            copy</h1>
+          <p class="text-Nuetural2  text-xl  max-w-4xl mx-auto mb-12 lg:px-16">Clipboard allows you to
+            track and organize everything you copy. Instantly access your clipboard on all your devices.
+          </p>
 
-  Clipboard instantly stores any item you copy in the cloud, 
-  meaning you can access your snippets immediately on all your 
-  devices. Our Mac and iOS apps will help you organize everything.
 
-  Quick Search
+        </div>
+        <div class="flex flex-col md:flex-row items-center justify-center gap-4 px-5   md:w-7/12  pb-24 md:mx-auto">
+          <button class="bg-Primarycyan text-white text-lg w-full rounded-full py-2 px-4"> Download for iOS</button>
+          <button class="bg-Primaryblue text-white text-lg w-full  rounded-full py-2 px-4"> Download for Mac</button>
 
-  Easily search your snippets by content, category, web address, application, and more.
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- computer secreen section -->
+  <section>
+    <div class=" flex flex-col justify-center items-center pt-32 md:pt-11 w-full mx-auto">
+      <h1 class="text-Nuetural my-4 pb-4  text-4xl font-bold mx-auto ">
+        Keep track of your snippets
+      </h1>
+      <p class="text-Nuetural2 max-w-4xl text-center text-xl mb-12 lg:px-16 mx-auto">
+        Clipboard instantly stores any item you copy in the cloud,
+        meaning you can access your snippets immediately on all your
+        devices. Our Mac and iOS apps will help you organize everything.
+      </p>
+    </div>
+    <div class="flex flex-row my-8 flex-wrap md:flex-nowrap md:gap-24">
+      <div><img src="./images/image-computer.png" alt="computer" class="w-full h-full"></div>
+      <div class="flex flex-col justify-start md:pt-12 max-w-sm">
+        <h1 class="text-Nuetural my-2 pb-2 text-left  text-2xl font-bold ">
+          Quick Search</h1>
+        <p class="text-Nuetural2  text-lg mb-12 ">
+          Easily search your snippets by content, category, web address, application, and more.
+        </p>
+        <h1 class="text-Nuetural my-2 pb-2  text-2xl font-bold ">
+          iCloud Sync</h1>
+        <p class="text-Nuetural2 text-lg mb-12 ">
+          Instantly saves and syncs snippets across all your devices.
 
-  iCloud Sync
+        </p>
+        <h1 class="text-Nuetural text-2xl font-bold ">
+          Complete History
+        </h1>
+        <p class="text-Nuetural2 text-lg mb-12  ">
+          Retrieve any snippets from the first moment you started using the app.
+        </p>
 
-  Instantly saves and syncs snippets across all your devices.
+      </div>
+    </div>
+  </section>
+  <!-- devices section -->
+  <section>
+    <div class="flex flex-col justify-center items-center pt-32 md:pt-11 w-full mx-auto">
+      <h1 class="text-Nuetural my-4 pb-4  text-4xl font-bold mx-auto ">
+        Access Clipboard anywhere
+      </h1>
+      <p class="text-Nuetural2 max-w-4xl text-center text-xl mb-12 lg:px-16 mx-auto">
+        Whether you’re on the go, or at your computer, you can access all your Clipboard
+        snippets in a few simple clicks.
+      </p>
+      <img src="./images/image-devices.png" alt="devices" class="">
+    </div>
 
-  Complete History
+  </section>
 
-  Retrieve any snippets from the first moment you started using the app.
+  <!-- supercharge section -->
+  <section>
+    <div class="flex flex-col justify-center items-center pt-32 md:pt-11  mx-auto">
+      <div class="text-center w-full">
+        <h1 class="text-Nuetural my-4 pb-4  text-4xl font-bold mx-auto ">
+          Supercharge your workflow
 
-  Access Clipboard anywhere
+        </h1>
+        <p class="text-Nuetural2 max-w-4xl text-center text-xl mb-12 lg:px-16 mx-auto">
+          We’ve got the tools to boost your productivity.
 
-  Whether you’re on the go, or at your computer, you can access all your Clipboard 
-  snippets in a few simple clicks.
+        </p>
+      </div>
+      <div class="mx-auto">
+        <div class="flex flex-row justify-center xl:justify-between items-center py-12 mx-auto flex-wrap">
+          <div class="flex flex-col justify-center items-center max-w-sm  text-center ">
+            <img src="./images/icon-blacklist.svg" alt="blacklist" class="my-12">
+            <h1 class="text-Nuetural text-2xl font-bold p-4">
+              Create blacklists
 
-  Supercharge your workflow
+            </h1>
+            <p class="text-Nuetural2 text-lg p-4">
+              Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
 
-  We’ve got the tools to boost your productivity.
+            </p>
+          </div>
+          <div class="flex flex-col justify-center items-center max-w-sm text-center ">
+            <img src="./images/icon-text.svg" alt="snippit" class="my-9">
+            <h1 class="text-Nuetural text-2xl font-bold p-4 ">
+              Plain text snippets
 
-  Create blacklists
+            </h1>
+            <p class="text-Nuetural2 text-lg p-4">
+              Remove unwanted formatting from copied text for a consistent look.
 
-  Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
+            </p>
+          </div>
+          <div class="flex flex-col justify-center items-center max-w-md text-center ">
+            <img src=" ./images/icon-preview.svg" alt="preview" class="my-9">
+            <h1 class="text-Nuetural text-2xl font-bold p-4 ">
+              Sneak preview
 
-  Plain text snippets
+            </h1>
+            <p class="text-Nuetural2 text-lg p-4">
+              Quick preview of all snippets on your Clipboard for easy access.
 
-  Remove unwanted formatting from copied text for a consistent look.
+            </p>
+          </div>
 
-  Sneak preview
 
-  Quick preview of all snippets on your Clipboard for easy access.
+        </div>
+        <div class="flex flex-row  justify-center md:justify-between items-center flex-wrap   py-12 mx-auto">
+          <div>
+            <img src=" ./images/logo-google.png" alt="google">
+          </div>
+          <div>
+            <img src="./images/logo-ibm.png
+          " alt="IBM">
+          </div>
+          <div>
+            <img src="./images/logo-microsoft.png" alt="microsoft">
+          </div>
+          <div>
+            <img src="./images/logo-hp.png" alt="Hewlette">
+          </div>
+          <div>
+            <img src="./images/logo-vector-graphics.png" alt="vector">
+          </div>
+        </div>
+      </div>
 
-  Clipboard for iOS and Mac OS
+    </div>
 
-  Available for free on the App Store. Download for Mac or iOS, sync with iCloud 
-  and you’re ready to start adding to your clipboard.
+  </section>
+  <!-- ios mac os -->
+  <section>
+    <div class="flex flex-col justify-center items-center pt-32 md:pt-11 w-full mx-auto">
+      <h1 class="text-Nuetural my-4 pb-4  text-4xl font-bold mx-auto ">
+        Clipboard for iOS and Mac OS
 
-  Download for iOS
-  Download for Mac
+      </h1>
+      <p class="text-Nuetural2 max-w-4xl text-center text-xl mb-12 lg:px-16 mx-auto">
+        Available for free on the App Store. Download for Mac or iOS, sync with iCloud
+        and you’re ready to start adding to your clipboard.
+      </p>
+      <div class="flex flex-col md:flex-row items-center justify-center gap-4 px-5   md:w-7/12  pb-24 md:mx-auto">
+        <button class="bg-Primarycyan text-white text-lg rounded-full py-2 px-4"> Download for iOS</button>
+        <button class="bg-Primaryblue text-white text-lg  rounded-full py-2 px-4"> Download for Mac</button>
 
-  FAQs
-  Contact Us
-  Privacy Policy
-  Press Kit
-  Install Guide
-  
+      </div>
+    </div>
+
+  </section>
+
+
+
   <footer>
+    <div
+      class=" bg-gray-100 text-Nuetural w-full flex  md:flex-row justify-center items-start mx-auto flex-wrap  lg:py-12 pr-4">
+
+      <div
+        class="lg:pl-40 flex md:flex-row items-start justify-center md:justify-start gap-28 w-4/5 flex-wrap lg:flex-nowrap pb-12">
+        <div class=" flex justify-end items-center ">
+          <img src="./images/logo.svg" alt="logo" class="h-14 w-14">
+        </div>
+        <div class="flex flex-col justify-center text-center items-center">
+          <p class="pb-8">
+            FAQs
+
+          </p>
+          <p>
+            Contact Us
+
+          </p>
+        </div>
+        <div class="flex flex-col justify-center items-center text-center">
+          <p class="pb-8">
+            Privacy Policy
+
+          </p>
+          <p>
+            Press Kit
+
+          </p>
+        </div>
+        <div class="flex flex-col justify-center items-center text-center">
+          <p>
+            Install Guide
+
+          </p>
+        </div>
+      </div>
+      <div class="flex md:flex-row gap-6 ">
+        <a href="#"><img src="./images/icon-facebook.svg" alt="facebook"></a>
+        <a href="#"> <img src="./images/icon-twitter.svg" alt="twitter"></a>
+        <a href="#"> <img src="./images/icon-instagram.svg" alt="instagram"> </a>
+
+      </div>
+    </div>
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Zeyna Baaj</a>.
     </p>
   </footer>
 </body>
+
 </html>
